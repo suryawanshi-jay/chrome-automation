@@ -1,0 +1,22 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Automation ",
+  "version": "1.0",
+  "description": "Automation Extension",
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "icons": ["hello_extensions.png"]
+  },
+  "content_scripts": [{
+	"run_at" : "document_start",
+    "css": ["styles.css"],
+    "js": ["jquery.js","t.js"],
+    "matches": ["https://*.whatsapp.com/*","https://api.whatsapp.com/*","https://web.whatsapp.com/*"]
+  }]
+ 
+}
