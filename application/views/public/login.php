@@ -11,7 +11,7 @@
   <!-- Bootstrap core CSS-->
   <link href="http://ec2-34-201-172-147.compute-1.amazonaws.com/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="<?=base_url('theme')?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url().'theme/vendor/font-awesome/css/font-awesome.min.css' ?>" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="<?=base_url('theme')?>/css/sb-admin.css" rel="stylesheet">
 </head>

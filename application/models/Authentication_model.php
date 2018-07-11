@@ -11,7 +11,7 @@ class Authentication_model extends CI_Model {
 				if(!count($this->db->where('email', $data['email'])->where('status',1)->get('users')->result_array())==0){
 					$this->session->set_userdata('user',$this->db->where('email', $data['email'])->get('users')->result_array()[0]);
 					$this->session->set_flashdata('login_success', 'welcome '.$this->session->user['firstname'].' to dashboard');
-					redirect('admin');
+					redirect(base_url().'admin');
 				}else
 					return 3;
 			}else

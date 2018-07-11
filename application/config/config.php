@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://ec2-34-201-172-147.compute-1.amazonaws.com/';
+//$config['base_url'] = 'http://ec2-34-201-172-147.compute-1.amazonaws.com/';
+$config['base_url'] = 'http://127.0.0.1/chrome-automation/';
 
 /*
 |--------------------------------------------------------------------------
